@@ -185,6 +185,7 @@ def player_numbers (team_search)
      }
    end
    }
+return team_numbers
 end
 
 

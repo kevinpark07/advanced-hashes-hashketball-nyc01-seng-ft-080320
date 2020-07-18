@@ -139,9 +139,9 @@ def num_points_scored(player)
     points = player_directory[points]
     end
   }
-binding.pry 
-end
 
+end
+binding.pry 
   
   
   

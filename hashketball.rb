@@ -188,6 +188,20 @@ def player_numbers (team_search)
   return team_numbers
 end
 
-
+def player_stats (player_search)
+  
+  game_hash.each {|team, team_info|
+    team_info.each {|key, value|
+     if key == :players
+       value.each {|player|
+       if player_search == player[:player_name]
+         player.delete(:player_name)
+         return player
+       end
+       }
+     end
+     }
+   }
+end
 
   

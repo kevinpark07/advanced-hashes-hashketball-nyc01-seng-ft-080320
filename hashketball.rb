@@ -128,8 +128,7 @@ def game_hash
 end
 
 def num_points_scored (player)
-  player_directory = []
-  game_hash.each {|key|
+  player_directory = game_hash[:home][:players].merge(game_hash[:away][:players])
      binding.pry 
     end
    

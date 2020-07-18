@@ -134,12 +134,14 @@ end
 
 def num_points_scored(player)
   
+  points = ""
+  
   player_directory.each {|player_name, points|
     if player == player_directory[player_name]
-     player_directory[points]
+    points = player_directory[points]
     end
   }
-
+points.to_i 
 end
 
   

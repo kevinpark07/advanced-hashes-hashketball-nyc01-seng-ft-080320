@@ -171,15 +171,20 @@ def team_names
   
 end
 
-def player_numbers (player_search)
+def player_numbers (team_search)
   
-  game_hash.each do |team, team_info|
-    team_info[:players].each do |player|
-      if player[:player_name] == player_search
-        return player[:number]
-      end
-    end
-  end
+  team_numbers = []
+  game_hash.each {|team, team_info|
+   if team_info[:team_name] == team_search
+     team_info.each {|key, value|
+     if key == :players
+       value.each {|player|
+       team_numbers.push(player[:number])
+       }
+     end
+     }
+   end
+   }
 end
 
 

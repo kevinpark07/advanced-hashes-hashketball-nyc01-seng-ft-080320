@@ -134,7 +134,7 @@ end
 
 def num_points_scored(player)
   
-  points = ""
+  points = {}
   
   player_directory.each {|player_name|
     if player == player_directory[player_name]

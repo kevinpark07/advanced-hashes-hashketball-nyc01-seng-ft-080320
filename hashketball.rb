@@ -134,7 +134,7 @@ end
 
 def num_points_scored(player)
  player_list = player_directory
-  points_scored = 
+  points_scored = ""
   player_directory.each {|player, points|
     if player == player_directory[:player][:player_name]
      return player_directory[:player][:score]

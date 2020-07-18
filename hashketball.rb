@@ -128,10 +128,8 @@ def game_hash
 end
 
 def num_points_scored (player)
-  player_directory = 
+  player_directory = []
   game_hash.each {|key|
-    if player == game_hash[:home][:players][:player_name] || game_hash[:away][:players][:player_name]
-     game_hash[:away][:players][:player_name][:points]
      binding.pry 
     end
    

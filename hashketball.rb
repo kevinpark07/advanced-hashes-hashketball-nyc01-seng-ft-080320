@@ -1,4 +1,5 @@
-# Write your code below game_hash
+require 'pry'
+
 def game_hash
   {
     home: {
@@ -127,5 +128,6 @@ def game_hash
 end
 
 def num_points_scored
-  game_hash
+  game_hash[:home][:team]
+  binding.pry 
 end

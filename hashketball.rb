@@ -140,8 +140,9 @@ def num_points_scored(player)
     end
   }
   points_scored 
+binding.pry
 end
-binding.pry 
+ 
   
   
   

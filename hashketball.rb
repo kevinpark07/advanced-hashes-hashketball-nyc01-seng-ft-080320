@@ -162,5 +162,13 @@ def team_colors (team_search)
         return game_hash[:away][:colors]
     end
 end
+
+def team_names 
   
+  game_hash.map {|team, team_info|
+  team_info[:team_name]
+  }
+  
+end
+
   

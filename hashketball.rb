@@ -129,7 +129,7 @@ end
 
 def num_points_scored (player)
   game_hash.each {|key|
-    if player == game_hash[key][:players][:player_name]
+    if player == game_hash[:home][:players][:player_name] || game_hash[:away][:players][:player_name]
       game_hash[key][:players][:player_name][:points]
     end
     binding.pry 

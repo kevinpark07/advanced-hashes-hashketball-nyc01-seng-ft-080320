@@ -203,4 +203,19 @@ def player_stats (player_search)
    }
 end
 
+def big_shoe_rebounds
+  
+  big_shoe = 0 
+  rebounds = 0
+  game_hash.each {|team, team_info|
+   team_info[:players].each {|player|
+     if player[:shoe] > big_shoe
+       big_shoe = player[:shoe]
+       rebounds = player[:rebounds]
+     end
+   }
+  }
+  return rebounds
+end
+
   

@@ -135,8 +135,8 @@ end
 def num_points_scored(player)
   
   player_directory.each {|player, points|
-    if player == player_directory[:player][:player_name]
-     player_directory[:player][:points]
+    if player == player_directory[:players][:player_name]
+     player_directory[:players][:points]
     end
   }
 binding.pry

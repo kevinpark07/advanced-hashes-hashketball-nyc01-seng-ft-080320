@@ -132,14 +132,13 @@ def player_directory
 end
 
 
-def num_points_scored (player)
+def num_points_scored (name, game)
   
-  player_directory.each {|key|
-    if player == player_directory[:player_name]
-    player_directory[:points]
-    end
-  }
-
+  game_hash.each do |team, team_hash|
+    team_hash[:players].each do |player, player_hash|
+      if player_hash[:player_name] == name
+        return player_hash[:points]
+  
 end
 binding.pry 
   

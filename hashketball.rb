@@ -132,5 +132,6 @@ def num_points_scored (player)
     if player == game_hash[key][:players][:player_name]
       game_hash[key][:players][:player_name][:points]
     end
+  }
   binding.pry 
 end

@@ -142,7 +142,7 @@ def num_points_scored (name, game)
     end
   end
 end
-binding.pry 
+
   
   
   

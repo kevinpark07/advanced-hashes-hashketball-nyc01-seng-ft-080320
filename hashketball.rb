@@ -154,6 +154,13 @@ def shoe_size (player_search)
   end
 end
   
+def team_colors (team_search)
   
+   if team_search.downcase =="brooklyn nets"
+        return game_hash[:home][:colors]
+      else
+        return game_hash[:away][:colors]
+    end
+end
   
   

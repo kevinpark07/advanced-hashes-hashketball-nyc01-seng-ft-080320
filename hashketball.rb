@@ -130,7 +130,7 @@ end
 def player_directory
   game_hash[:home][:players] + game_hash[:away][:players]
 end
-binding.pry 
+
 
 def num_points_scored(player)
   player_directory.each {
@@ -139,7 +139,7 @@ def num_points_scored(player)
     end
   }
 end
-
+binding.pry 
   
   
   

@@ -140,6 +140,7 @@ def num_points_scored(player)
      points_scored = player_list[:player][:score]
     end
   }
+  points_scored 
 end
 
   

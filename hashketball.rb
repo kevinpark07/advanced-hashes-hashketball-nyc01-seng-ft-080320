@@ -132,12 +132,12 @@ def player_directory
 end
 
 
-def num_points_scored (name, game)
+def num_points_scored (player_search)
   
-  game.each do |team, team_hash|
-    team_hash[:players].each do |player, player_hash|
-      if player_hash[:player_name] == name
-        return player_hash[:points]
+  game_hash.each do |team, team_info|
+    team_info[:players].each do |player|
+      if player[:player_name] == player_search
+        return player[:points]
       end
     end
   end
